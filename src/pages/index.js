@@ -17,7 +17,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
           <p>
-            Get started by editing&nbsp;
+            Hello PAQ! Get started by editing&nbsp;
             <code className={styles.code}>src/pages/index.js</code>
           </p>
           <div>
@@ -26,7 +26,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -110,5 +110,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
