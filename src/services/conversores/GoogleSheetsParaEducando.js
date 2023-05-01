@@ -17,4 +17,4 @@ function converterGoogleSheetsParaEducandos(dadosGoogleSheets) {
   return dadosConvertidos;
 }
 
-module.exports = converterGoogleSheetsParaEducandos;
+export default converterGoogleSheetsParaEducandos;
