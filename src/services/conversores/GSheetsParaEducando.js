@@ -4,12 +4,13 @@ function converterGoogleSheetsParaEducandos(dadosGoogleSheets) {
   dadosGoogleSheets.forEach((linha, index) => {
     if (index === 0) return;
 
-    const [id, nomeCompleto, etapa, unidade] = linha;
+    const [nomeCompleto, id, etapa, unidadeId, unidade] = linha;
 
     dadosConvertidos.push({
       id,
       nomeCompleto,
       etapa,
+      unidadeId,
       unidade,
     });
   });
