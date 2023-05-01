@@ -4,14 +4,17 @@ function converterGoogleSheetsParaEducandos(dadosGoogleSheets) {
   dadosGoogleSheets.forEach((linha, index) => {
     if (index === 0) return;
 
-    const [nomeCompleto, id, etapa, unidadeId, unidade] = linha;
-
+    const [nomeCompleto, id, etapa, unidadeId, unidade, trilhaId, trilha] =
+      linha;
+    console.log(linha);
     dadosConvertidos.push({
       id,
       nomeCompleto,
       etapa,
       unidadeId,
       unidade,
+      trilhaId,
+      trilha,
     });
   });
 
