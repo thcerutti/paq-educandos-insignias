@@ -2,15 +2,25 @@ import { useEffect, useState } from "react";
 import CardEducando from "./CardEducando";
 
 const TodosEducandos = () => {
+  const statusOriginal = 'Nenhum educando para listar'
+
   const [todosOsEducandos, setTodosOsEducandos] = useState([]);
+  const [status, setStatus] = useState(statusOriginal)
+  const statusCarregando = 'Carregando...'
 
   useEffect(() => {
+    carregarEducandos()
+  }, []);
+
+  const carregarEducandos = () => {
+    setStatus(statusCarregando)
     fetch("/api/educandos")
       .then((res) => res.json())
       .then((data) => {
         setTodosOsEducandos(data);
-      });
-  }, []);
+      })
+      .then(() => setStatus(statusOriginal));
+    };
 
   return (
     <>
@@ -20,7 +30,7 @@ const TodosEducandos = () => {
           <CardEducando key={educando.id} educando={educando} />
         ))
       ) : (
-        <span>Nenhum educando para listar</span>
+        <span>{status}</span>
       )}
     </>
   );
