@@ -1,20 +1,18 @@
-function converterGoogleSheetsParaEducandos(dadosGoogleSheets) {
+function converterGoogleSheetsParaEtapas(dadosGoogleSheets) {
   const dadosConvertidos = [];
 
   dadosGoogleSheets.forEach((linha, index) => {
     if (index === 0) return;
 
-    const [id, nomeCompleto, etapa, unidade] = linha;
+    const [etapa, id] = linha;
 
     dadosConvertidos.push({
       id,
-      nomeCompleto,
       etapa,
-      unidade,
     });
   });
 
   return dadosConvertidos;
 }
 
-export default converterGoogleSheetsParaEducandos;
+export default converterGoogleSheetsParaEtapas;

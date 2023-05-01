@@ -1,4 +1,4 @@
-import converterGoogleSheetsParaEducandos from "@/services/conversores/GoogleSheetsParaEducando";
+import converterGoogleSheetsParaEducandos from "@/services/conversores/GSheetsParaEducando";
 import lerPlanilhaGoogleSheetsAsync from "@/services/gsheets/readDataService";
 
 export default async function handler(req, res) {
