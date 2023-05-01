@@ -1,4 +1,4 @@
-const { GoogleAuth, auth } = require("google-auth-library");
+const { auth } = require("google-auth-library");
 const { google } = require("googleapis");
 
 const envCredentials = JSON.parse(
@@ -8,9 +8,9 @@ const envCredentials = JSON.parse(
 const client = auth.fromJSON(envCredentials);
 client.scopes = process.env.SCOPES;
 
-const service = google.sheets({
+const googleSheetsService = google.sheets({
   version: process.env.API_VERSION,
   auth: client,
 });
 
-module.exports = service;
+export default googleSheetsService;

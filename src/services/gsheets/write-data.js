@@ -1,7 +1,6 @@
-const service = require("./utils/google-sheets");
-const config = require("./config.json");
+import googleSheetsService from "./googleSheetsService";
 
-service.spreadsheets.values
+googleSheetsService.spreadsheets.values
   .append({
     spreadsheetId: process.env.SPREADSHEET_ID,
     range: "api-test!A1:A3",
