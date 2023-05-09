@@ -1,12 +1,13 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import TodosEducandos from "@/components/TodosEducandos";
+import Container from "react-bootstrap/Container";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
+    <Container>
       <Head>
         <title>PAQ - Educandos</title>
         <meta name="description" content="Página dos educandos do PAQ" />
@@ -14,6 +15,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TodosEducandos />
-    </>
+    </Container>
   );
 }
