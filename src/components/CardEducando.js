@@ -4,7 +4,7 @@ const CardEducando = ({ educando }) => {
   return (
     <>
       <Card
-        style={{ width: "18rem", margin: "10px" }}
+        style={{ width: "30rem", margin: "10px" }}
         className="card-educando"
         bg="light"
       >
