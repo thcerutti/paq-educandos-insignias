@@ -1,8 +1,16 @@
+// import { Image } from "react-bootstrap";
+import PaqNavbar from "./PaqNavbar";
+
 const PaginaInicial = () => {
   return (
     <>
+      <PaqNavbar />
       <div>
-        <img src="/fundo-web.jpeg" alt="fundo PAQ" style={{ width: "100%" }} />
+        {/* <Image
+          src="/fundo-web.jpeg"
+          alt="fundo PAQ"
+          style={{ width: "100%" }}
+        /> */}
       </div>
       <div>
         <h1>[Nome do projeto]</h1>
