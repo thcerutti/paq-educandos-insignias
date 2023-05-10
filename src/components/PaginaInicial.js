@@ -4,7 +4,6 @@ import PaqNavbar from "./PaqNavbar";
 const PaginaInicial = () => {
   return (
     <>
-      <PaqNavbar />
       <div>
         {/* <Image
           src="/fundo-web.jpeg"
