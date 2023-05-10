@@ -6,9 +6,10 @@ O objetivo deste projeto é listar as insignias conquistadas pelos educandos do 
 
 ## Tecnologia
 
-Este é um projeto [Next.js] (https://nextjs.org/) criado com [create-next-app] (https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Este é um projeto [Next.js](https://nextjs.org/) criado com [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Rodando o projeto
+
 Primeiro, execute o servidor de desenvolvimento:
 
 ```bash
