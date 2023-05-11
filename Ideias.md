@@ -8,11 +8,11 @@
   - colaboradores do projeto
   - botão para acessar a página de educandos
   - sugestões de nomes
-    - PAQ Achievements
-    - PAQ Badges
+    - 1 PAQ Achievements
+    - 2 PAQ Badges
     - PAQ Insignias
     - PAQ Conquistas
-    - PAQ Activities Manager
+    - 3 PAQ Activities 
     - activities PAQ medals
 
 - listagem de educandos
