@@ -1,4 +1,4 @@
-import converterGoogleSheetsParaEducandos from "@/services/conversores/GSheetsParaEducando";
+import converterGoogleSheetsParaEducandos from "@/services/conversores/GSheetsParaEducandos";
 import lerPlanilhaGoogleSheetsAsync from "@/services/gsheets/readDataService";
 
 const ordenarPorNomeCompleto = (listaDeEducandos) =>

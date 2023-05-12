@@ -1,4 +1,4 @@
-import converterGoogleSheetsParaEtapas from "@/services/conversores/GSheetsParaEtapa";
+import converterGoogleSheetsParaEtapas from "@/services/conversores/GSheetsParaEtapas";
 import lerPlanilhaGoogleSheetsAsync from "@/services/gsheets/readDataService";
 
 export default async function handler(req, res) {
