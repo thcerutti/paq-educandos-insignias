@@ -46,14 +46,22 @@ Para saber mais sobre o Next.js, dê uma olhada nos seguintes recursos:
 
 Assim que o projeto é enviado para o GitHub, o servidor de integração contínua é acionado e o projeto é compilado e publicado no Vercel. O link para o projeto publicado é: [https://paq-educandos-insignias.vercel.app/](https://paq-educandos-insignias.vercel.app/)
 
-## Configuração do GIT local
+## Configuração do GIT local e global
 
-Para configurar o seu usuário no repositório local, execute os seguintes comandos no terminal:
+Caso você compartilhe o computador com outras pessoas, é recomendável que você faça a configuração do git local, que só vai ser aplicável para o repositório atual. Para configurar o seu usuário no repositório **local**, execute os seguintes comandos no terminal:
 
+```bash
 git config --local user.name "<seu_nome>"
 git config --local user.email "<seu_email>"
+```
 
-Caso você seja o único usuário do computador, você pode usar a configuração global:
+Caso você seja o único usuário do computador, você pode usar a configuração global do GIT, que vai ser aplicável para todos os repositórios que você criar no seu computador. Para configurar o seu usuário no repositório **global**, execute os seguintes comandos no terminal:
 
+```bash
 git config --global user.name "<seu_nome>"
 git config --global user.email "<seu_email>"
+```
+
+## Board de atividades do projeto
+
+O board de atividades que vamos executar no projeto encontra-se no [GiHub do PAQ](https://github.com/orgs/paq-devs/projects/2)
