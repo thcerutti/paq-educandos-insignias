@@ -18,7 +18,7 @@ const CardEducando = ({ educando }) => {
           <Card.Text>
             <strong>Etapa:</strong> {educando.etapa} ({educando.trilha})
           </Card.Text>
-          <Card.Link href="#">Ver perfil completo</Card.Link>
+          <Card.Link href={`/educando?id=${educando.id}`}>Ver perfil completo</Card.Link>
         </Card.Body>
       </Card>
     </>

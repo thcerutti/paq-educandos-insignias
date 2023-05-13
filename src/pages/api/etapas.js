@@ -1,5 +1,5 @@
-import converterGoogleSheetsParaEtapas from "@/services/conversores/GSheetsParaEtapa";
-import lerPlanilhaGoogleSheetsAsync from "@/services/gsheets/readDataService";
+import converterGoogleSheetsParaEtapas from "@/servicos/conversores/GSheetsParaEtapas";
+import lerPlanilhaGoogleSheetsAsync from "@/servicos/gsheets/readDataService";
 
 export default async function handler(req, res) {
   const etapas = await lerPlanilhaGoogleSheetsAsync("etapas!A:Z");
