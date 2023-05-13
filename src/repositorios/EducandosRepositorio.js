@@ -4,8 +4,7 @@ import converterGoogleSheetsParaEducandos from "@/servicos/conversores/GSheetsPa
 const buscarEducandoPorId = async (id) => {
   const data = await readDataService("Educandos!A:Z");
   const educandos = converterGoogleSheetsParaEducandos(data);
-  const x = educandos.find((educando) => educando.id === id.toString());
-  return x;
+  return educandos.find((educando) => educando.id === id.toString());
 };
 
 export default buscarEducandoPorId;
