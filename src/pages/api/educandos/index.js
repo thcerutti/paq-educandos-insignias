@@ -1,5 +1,5 @@
-import converterGoogleSheetsParaEducandos from "@/services/conversores/GSheetsParaEducandos";
-import lerPlanilhaGoogleSheetsAsync from "@/services/gsheets/readDataService";
+import converterGoogleSheetsParaEducandos from "@/servicos/conversores/GSheetsParaEducandos";
+import lerPlanilhaGoogleSheetsAsync from "@/servicos/gsheets/readDataService";
 
 const ordenarPorNomeCompleto = (listaDeEducandos) =>
   listaDeEducandos.sort((a, b) => (a.nomeCompleto < b.nomeCompleto ? -1 : 1));

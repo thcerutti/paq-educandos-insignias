@@ -1,5 +1,5 @@
-import converterGoogleSheetsParaInsigniasConquistadas from "@/services/conversores/GSheetsParaInsigniasConquistadas";
-import lerPlanilhaGoogleSheetsAsync from "@/services/gsheets/readDataService";
+import converterGoogleSheetsParaInsigniasConquistadas from "@/servicos/conversores/GSheetsParaInsigniasConquistadas";
+import lerPlanilhaGoogleSheetsAsync from "@/servicos/gsheets/readDataService";
 
 export default async function handler(req, res) {
   const etapas = await lerPlanilhaGoogleSheetsAsync(

@@ -1,5 +1,5 @@
-import converterGoogleSheetsParaTrilhas from "@/services/conversores/GSheetsParaTrilhas";
-import lerPlanilhaGoogleSheetsAsync from "@/services/gsheets/readDataService";
+import converterGoogleSheetsParaTrilhas from "@/servicos/conversores/GSheetsParaTrilhas";
+import lerPlanilhaGoogleSheetsAsync from "@/servicos/gsheets/readDataService";
 
 export default async function handler(req, res) {
   const etapas = await lerPlanilhaGoogleSheetsAsync("trilhas!A:Z");

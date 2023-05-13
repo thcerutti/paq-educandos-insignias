@@ -1,5 +1,5 @@
-import converterGoogleSheetsParaUnidades from "@/services/conversores/GSheetsParaUnidades";
-import lerPlanilhaGoogleSheetsAsync from "@/services/gsheets/readDataService";
+import converterGoogleSheetsParaUnidades from "@/servicos/conversores/GSheetsParaUnidades";
+import lerPlanilhaGoogleSheetsAsync from "@/servicos/gsheets/readDataService";
 
 export default async function handler(req, res) {
   const etapas = await lerPlanilhaGoogleSheetsAsync("unidades!A:Z");

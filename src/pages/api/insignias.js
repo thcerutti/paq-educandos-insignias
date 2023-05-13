@@ -1,5 +1,5 @@
-import converterGoogleSheetsParaInsignias from "@/services/conversores/GSheetsParaInsignias";
-import lerPlanilhaGoogleSheetsAsync from "@/services/gsheets/readDataService";
+import converterGoogleSheetsParaInsignias from "@/servicos/conversores/GSheetsParaInsignias";
+import lerPlanilhaGoogleSheetsAsync from "@/servicos/gsheets/readDataService";
 
 export default async function handler(req, res) {
   const etapas = await lerPlanilhaGoogleSheetsAsync("insignias!A:Z");
