@@ -10,14 +10,20 @@ Este é um projeto [Next.js](https://nextjs.org/) criado com [create-next-app](h
 
 ## Rodando o projeto
 
-Primeiro, execute o servidor de desenvolvimento:
+Primeiro, instale todas as dependências necessárias, executando o seguinte comando no terminal:
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+Depois inicie o servidor de desenvolvimento, executando o seguinte comando no terminal:
 
 ```bash
 npm run dev
 # ou
 yarn dev
-# ou
-pnpm dev
 ```
 
 Abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado. As páginas são atualizadas automaticamente à medida que você edita os arquivos.
@@ -39,3 +45,15 @@ Para saber mais sobre o Next.js, dê uma olhada nos seguintes recursos:
 ## Servidor de integração contínua
 
 Assim que o projeto é enviado para o GitHub, o servidor de integração contínua é acionado e o projeto é compilado e publicado no Vercel. O link para o projeto publicado é: [https://paq-educandos-insignias.vercel.app/](https://paq-educandos-insignias.vercel.app/)
+
+## Configuração do GIT local
+
+Para configurar o seu usuário no repositório local, execute os seguintes comandos no terminal:
+
+git config --local user.name "<seu_nome>"
+git config --local user.email "<seu_email>"
+
+Caso você seja o único usuário do computador, você pode usar a configuração global:
+
+git config --global user.name "<seu_nome>"
+git config --global user.email "<seu_email>"
