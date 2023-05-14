@@ -6,6 +6,7 @@ function converterGoogleSheetsParaEducandos(dadosGoogleSheets) {
 
     const [nomeCompleto, id, etapa, unidadeId, unidade, trilhaId, trilha] =
       linha;
+    if (nomeCompleto === "") return;
     dadosConvertidos.push({
       id,
       nomeCompleto,

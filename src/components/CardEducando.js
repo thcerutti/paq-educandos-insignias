@@ -16,7 +16,7 @@ const CardEducando = ({ educando }) => {
             <strong>Unidade:</strong> {educando.unidade}
           </Card.Text>
           <Card.Text>
-            <strong>Etapa:</strong> {educando.etapa} ({educando.trilha})
+            <strong>Etapa:</strong> {educando.etapa} ({educando.trilha || "Sem trilha"})
           </Card.Text>
           <Card.Link href={`/educando?id=${educando.id}`}>Ver perfil completo</Card.Link>
         </Card.Body>
