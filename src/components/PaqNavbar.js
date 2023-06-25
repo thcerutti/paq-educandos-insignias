@@ -16,7 +16,6 @@ const PaqNavbar = ({ children }) => {
             <Nav className="me-auto">
               <Nav.Link href="/educandos">Educandos</Nav.Link>
               <Nav.Link href="/eventos">Eventos</Nav.Link>
-              <Nav.Link href="/#">Insignias</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
