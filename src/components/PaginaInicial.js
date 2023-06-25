@@ -5,13 +5,6 @@ const PaginaInicial = () => {
   return (
     <>
       <div>
-        {/* <Image
-          src="/fundo-web.jpeg"
-          alt="fundo PAQ"
-          style={{ width: "100%" }}
-        /> */}
-      </div>
-      <div>
         <h1>[Nome do projeto]</h1>
         <p>Essa é a página inicial</p>
       </div>

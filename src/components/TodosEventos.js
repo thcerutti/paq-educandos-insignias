@@ -27,6 +27,7 @@ const TodosEventos = () => {
                 <th>Nome</th>
                 <th>Data</th>
                 <th>Descrição</th>
+                <th>Fotos</th>
               </tr>
             </thead>
             <tbody>
@@ -37,6 +38,7 @@ const TodosEventos = () => {
                     <td>{evento.nome}</td>
                     <td>{evento.data}</td>
                     <td>{evento.descricao}</td>
+                    <td><a href="#" target="_blank">Fotos</a></td>
                   </tr>
                 );
               })}

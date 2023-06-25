@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import CardEducando from "./CardEducando";
+import Table from "react-bootstrap/Table";
 
 const TodosEducandos = () => {
   const statusOriginal = 'Nenhum educando para listar'
@@ -25,13 +26,41 @@ const TodosEducandos = () => {
   return (
     <>
       <h1>Todos os Educandos</h1>
-      {todosOsEducandos.length > 0 ? (
-        todosOsEducandos.map((educando) => (
-          <CardEducando key={educando.id} educando={educando} />
-        ))
-      ) : (
-        <span>{status}</span>
+      {todosOsEducandos.length > 0 && (
+        <>
+          <Table striped hover>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Unidade</th>
+                <th>Etapa</th>
+                <th>Trilha</th>
+              </tr>
+            </thead>
+            <tbody>
+              {todosOsEducandos.map((educando) => (
+                <tr key={educando.id}>
+                  <td>
+                    <a href={`/educando?id=${educando.id}`} target="_blank">
+                      {educando.nomeCompleto}
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#">{educando.unidade}</a>
+                  </td>
+                  <td>
+                    <a href="#">{educando.etapa}</a>
+                  </td>
+                  <td>
+                    <a href="#">{educando.trilha}</a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        </>
       )}
+      {todosOsEducandos.length === 0 && <span>{status}</span>}
     </>
   );
 };
