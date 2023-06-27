@@ -1,4 +1,8 @@
 # Ideias
+ideias do discord:
+tutorial/manual ensinando como fazer o pull/request de arquivos pra dentro do projeto (trabalho open-source)
+quem vai manter os dados do database sempre atualiado, manter de forma automatica ou alguma pessoa altera cada informação
+a cada niveis dependendo da experiencia da peessoa ela se torna uma mentora externa  
 
 -> página inicial
   - fundo do PAQ
